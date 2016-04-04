@@ -2,7 +2,7 @@ Template.profile.events({
 	"submit .edit-profile":function(event){
 		var file = $('#profileImage').get(0).files[0];
 		if(file){
-			fsFile = new FS.Filter(file);
+			fsFile = new FS.File(file);
 
 			profileImages.insert(fsFile,function(err, result){
 				if(err){
@@ -14,7 +14,7 @@ Template.profile.events({
 					UserImages.insert({
 						userId : Meteor.userId(),
 						username: Meteor.user().username,
-						image: imageLOc
+						image: imageLoc
 					});
 
 					Router.go('/');
