@@ -26,3 +26,5 @@ selaias:accounts-entry
 cfs:standard-packages
 cfs:gridfs
 aldeed:autoform
+aldeed:simple-schema
+less@2.5.1
