@@ -9,7 +9,7 @@ Template.profile.events({
 					throw new Meteor.Error(err);
 				}else{
 
-					var imageLoc = ''+result._id;
+					var imageLoc = 'C:\\Users\\Andrii\\Desktop\\microposts\\microposts\\public\\img'+result._id;
 
 					UserImages.insert({
 						userId : Meteor.userId(),
