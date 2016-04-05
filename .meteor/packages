@@ -28,3 +28,4 @@ cfs:gridfs
 aldeed:autoform
 aldeed:simple-schema
 less@2.5.1
+aldeed:collection2
