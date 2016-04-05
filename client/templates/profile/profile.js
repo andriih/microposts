@@ -1,10 +1,10 @@
 Template.profile.events({
 	"submit .edit-profile":function(event){
-		var file = $('#profileImage').get(0).files[0];
+		var file = $('#profileImage').get(0).files(0);
 		if(file){
 			fsFile = new FS.File(file);
 
-			profileImages.insert(fsFile,function(err, result){
+			profileImage.insert(fsFile,function(err, result){
 				if(err){
 					throw new Meteor.Error(err);
 				}else{
