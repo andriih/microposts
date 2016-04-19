@@ -10,7 +10,7 @@ Meteor.startup(function(){
 	});
 });
 
-Template.registerHelper('getProfileImg',function(userId){
-	var imgUrl = UserImages.findOne({userId: userId}).image;
+Template.registerHelper('getProfileImg', function(userId) {
+	var imgUrl = UserImages.findOne({UserId: userId}).image;
 	return imgUrl;
 });
