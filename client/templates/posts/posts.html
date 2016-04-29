@@ -28,11 +28,11 @@
 	{{#each posts}}
 	<div class="row post">
 		<div class="col-md-1">
- 			<img src="{{getProfileImg UserId}}" />
+ 			<img src="{{getProfileImg userId}}" />
 		</div>
 
 		<div class="col-md-11">
-			<small>Posted by {{username}} at {{createdAt}}</small>
+			<small>Posted by <strong>{{username}}</strong> at {{createdAt}}</small>
 			<p>{{body}}</p>
 		</div>
 
